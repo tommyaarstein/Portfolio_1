@@ -3,23 +3,268 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Discover Tommy Aarstein's portfolio."/>
+    <meta name="description" content="Tommy Aarstein's front-end portfolio. Explore three projects designed and developed during my sudies."/>
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
-    <title>Home | Portfolio</title>
+    <title>Tommy | Front-end Portfolio</title>
 
     <link rel="stylesheet" href="src/css/style.css" />
     <script type="module" src="src/jss/home.js"></script>
   </head>
+    <body id="top">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+
+        <header class="site-header">
+            <div class="container header-content">
+                <a class="logo" href="#top" aria-label="Tommy - Home">
+                    Tommy<span>.</span>
+                </a>
+
+                <nav aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
         <main id="main-content">
-            <section class="page-welcome">
-                <h1>Tommy Aarstein - Portfolio</h1>
-                <p>Welcome to my portfolio</p>
+            <section class="hero section" aria-labelledby="hero-title">
+                <div class="container">
+                    <p class="eyebrow">Front-end student</p>
+
+                    <h1 id="hero-title">Hi, i'm <span>Tommy.</span></h1>
+
+                    <p class="hero-subtitle">Front-end developer in the making.</p>
+
+                    <p class="hero-description">Learning, building and turning ideas into websites.</p>
+                </div>
             </section>
 
-            <section class="portfolio-section">
-                <div class="portfolio-products"></div>
+            <section class="skills section" aria-labelledby="skills-title">
+                <div class="container">
+                    <h2 id="skills-title">My main tools</h2>
+
+                    <ul class="tools-list">
+                        <li class="tool">
+                            <img class="tool-icon" src="images/icons/html5-original.svg" alt="" width="56" height="56"/>
+                            <span>HTML</span>
+                        </li>
+
+                        <li class="tool">
+                            <img class="tool-icon" src="images/icons/css3-original.svg" alt="" width="56" height="56"/>
+                            <span>CSS</span>
+                        </li>    
+                        
+                        <li class="tool">
+                            <img class="tool-icon" src="images/icons/javascript-original.svg" alt="" width="56" height="56"/>
+                            <span>JavaScript</span>
+                        </li>
+
+                        <li class="tool">
+                            <img class="tool-icon" src="images/icons/git-original.svg" alt="" width="56" height="56"/>
+                            <span>Git</span>
+                        </li>
+
+                        <li class="tool">
+                            <img class="tool-icon" src="images/icons/figma-original.svg" alt="" width="56" height="56"/>
+                            <span>Figma</span>
+                        </li>
+                    </ul>
+
+                    <div class="coursework">
+                        <h3>Explored through coursework</h3>
+
+                        <p class="section-description">Technologies and concepts I've worked with during my studies</p>
+
+                        <ul class="coursework-list">
+                            <li>
+                                <img class="coursework-icon" src="images/icons/nodejs-original.svg" alt="" width="32" height="32"/>
+                                <span>Node.js</span>
+                            </li>
+
+                            <li>
+                                <img class="coursework-icon" src="images/icons/express-original.svg" alt="" width="32" height="32"/>
+                                <span>Express</span>
+                            </li>
+
+                            <li>
+                                <span class="coursework-symbol" aria-hidden="true">{ }</span>
+                                <span>REST APIs</span>
+                            </li>
+
+                            <li>
+                                <span class="coursework-symbol" aria-hidden="true">EJS</span>
+                                <span>EJS</span>
+                            </li>
+
+                            <li>
+                                <img class="coursework-icon" src="images/icons/mysql-original.svg" alt="" width="32" height="32"/>
+                                <span>MySQL</span>
+                            </li>
+
+                            <li>
+                                <img class="coursework-icon" src="images/icons/sequelize-original.svg" alt="" width="32" height="32"/>
+                                <span>Sequelize</span>
+                            </li>
+
+                            <li>
+                                <img class="coursework-icon" src="images/icons/jquery-original.svg" alt="" width="32" height="32"/>
+                                <span>jQuery</span>
+                            </li>
+
+                            <li>
+                                <span class="coursework-symbol" aria-hidden="true">JS</span>
+                                <span>Object-oriented JavaScript</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects section" aria-labelledby="projects-title">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2 id="projects-title">School projects</h2>
+
+                        <p class="section-description">Three projects I designed and developed during my studies</p>
+                    </div>
+
+                    <div class="project-grid">
+                        <article class="project-card">
+                            <img class="project-image" src="images/ting.jpg" alt="Screenshot of the TING online shop" width="800" height="500" loading="lazy"/>
+
+                            <div class="project-content">
+                                <p class="project-category">Project Exam</p>
+
+                                <h3>TING</h3>
+
+                                <p class="project-description">An online shop featuring a product carousel, shopping cart, and product information fetched dynamically from an API.</p>
+
+                                <ul class="project-tags" aria-label="Technologies used">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+
+                                <div class="project-links">
+                                    <a class="text-link" href="https://tommyaarstein.github.io/ProjectExam1-FED/" target="_blank" rel="noopener noreferrer" aria-label="Visit the TING live site (opens in new tab)">Live site <span aria-hidden="true">↗</span></a>
+
+                                    <a class="text-link" href="https://github.com/tommyaarstein/ProjectExam1-FED" target="_blank" rel="noopener noreferrer" aria-label="View the TING GitHub repository (opens in new tab)">GitHub <span aria-hidden="true">↗</span></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <img class="project-image" src="images/rainy-days.jpg" alt="Screenshot of my Rainy Days website" width="800" height="500" loading="lazy"/>
+
+                            <div class="project-content">
+                                <p class="project-category">JavaScript 1 Course Assignment</p>
+
+                                <h3>RainyDays</h3>
+
+                                <p class="project-description">A course project applying JavaScript fundamentals, combining the website's structure and styling with functionality written in vanilla JavaScript.</p>
+
+                                <ul class="project-tags" aria-label="Technologies used">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+
+                                <div class="project-links">
+                                    <a class="text-link" href="https://tommyaarstein.github.io/FED1-JS1-CA/" target="_blank" rel="noopener noreferrer" aria-label="Visit the JavaScript 1 RainyDays live site (opens in new tab)">Live site <span aria-hidden="true">↗</span></a>
+
+                                    <a class="text-link" href="https://github.com/tommyaarstein/FED1-JS1-CA" target="_blank" rel="noopener noreferrer" aria-label="View the JavaScript 1 Rainy Days GitHub repository (opens in new tab)">GitHub <span aria-hidden="true">↗</span></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <img class="project-image" src="images/community-museum.jpg" alt="Screenshot of the Tromsø Community Museum website" width="800" height="500" loading="lazy"/>
+
+                            <div class="project-content">
+                                <p class="project-category">Semester Project 1</p>
+
+                                <h3>Tromsø Community Museum</h3>
+
+                                <p class="project-description">A website for Tromsø Community Museum, bringing together the design and development skills from my first semester.</p>
+
+                                <ul class="project-tags" aria-label="Technologies used">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+
+                                <div class="project-links">
+                                    <a class="text-link" href="https://tommyaarstein.github.io/community-science-museum/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Tromsø Community Museum live site (opens in new tab)">Live site <span aria-hidden="true">↗</span></a>
+
+                                    <a class="text-link" href="https://github.com/tommyaarstein/community-science-museum" target="_blank" rel="noopener noreferrer" aria-label="View the Tromsø Community Museum GitHub repository (opens in new tab)">GitHub <span aria-hidden="true">↗</span></a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about section" aria-labelledby="about-title">
+                <div class="container">
+                    <div class="about-panel">
+                        <img class="avatar" src="images/avatar.png" alt="Illustrated avatar of Tommy" width="240" height="240" loading="lazy"/>
+
+                        <div class="about-content">
+                            <h2 id="about-title">A little about me</h2>
+
+                            <p>
+                                I'm Tommy Aarstein, a front-end student at Noroff.
+                                I enjoy creating clear, user-friendly websites and turning
+                                ideas into something people can use.
+                            </p>
+
+                            <p>
+                                I designed and developed each of the projects shown here myself.
+                                Each one has helped me build my skills and discover something new.
+                            </p>
+
+                            <div class="about-links">
+                                <a class="button button--light" href="documents/cv-tommy-aarstein-eng.pdf" download>
+                                    <span class="button-label">Download CV</span>
+                                    <span class="button-icon" aria-hidden="true">↓</span>
+                                </a>
+
+                                <a class="text-link" href="documents/cover-letter-tommy-aarstein-eng.pdf" download>
+                                    Download cover letter
+                                    <span aria-hidden="true">↓</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact section" aria-labelledby="contact-title">
+                <div class="container">
+                    <h2 id="contact-title">Let's connect.</h2>
+
+                    <p class="section-description">Have a question or want to work together?</p>
+
+                    <div class="contact-links">
+                        <a class="button button--primary" href="mailto:tommy@aarstein.no">
+                            <span class="button-label">Email me</span>
+                            <span class="button-icon" aria-hidden="true">↗</span>
+                        </a>
+
+                        <a class="text-link" href="https://github.com/tommyaarstein" target="_blank" rel="noopener noreferrer" aria-label="Visit Tommy Aarstein's GitHub profile (opens in new tab)">GitHub <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
             </section>
         </main>
+
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <p>© 2026 Tommy Aarstein</p>
+                <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+            </div>
+        </footer>
     </body>
 </html>
